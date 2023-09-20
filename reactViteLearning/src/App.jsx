@@ -2,7 +2,7 @@
 import './App.css'
 import Dog from './Dog' 
 import Die from './Die'
-
+import ListPicker from './ListPicker'
 function App() {
 
   return (
@@ -10,7 +10,7 @@ function App() {
      <div>
       <Dog dogName="Rex" count="twice"></Dog>
       <Die sides={20}></Die>
-      <Die></Die>
+      <ListPicker val={[1, 2, 3]}></ListPicker>
      </div>
   )
 }
