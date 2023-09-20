@@ -6,6 +6,7 @@ import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import Heading from './Heading'
 import ColorList from './ColorList'
+import Slots from './Slots'
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
       <ListPicker val={[1, 2, 3]}></ListPicker>
       <DoubleDice sides={2}></DoubleDice>
       <ColorList colors={["blue", "red", "yellow"]}></ColorList>
+      <Slots></Slots>
+
+
      </div>
   )
 }
