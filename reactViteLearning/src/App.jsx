@@ -7,7 +7,7 @@ function App() {
   return (
     
      <div>
-      <Dog></Dog>
+      <Dog dogName="Rex" count="twice"></Dog>
      </div>
   )
 }

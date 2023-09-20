@@ -1,8 +1,8 @@
  import "./Dog.css"
 
- function Dog() {
+ function Dog(props) {
 
-        return <p className="Dog">Woof Woof Woof</p>
+        return <p className="Dog">{props.dogName} says {props.count}: Woof Woof Woof</p>
  }
 
  export default Dog;
