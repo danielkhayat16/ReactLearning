@@ -1,6 +1,7 @@
 
 import './App.css'
 import Dog from './Dog' 
+import Die from './Die'
 
 function App() {
 
@@ -8,6 +9,8 @@ function App() {
     
      <div>
       <Dog dogName="Rex" count="twice"></Dog>
+      <Die></Die>
+      <Die></Die>
      </div>
   )
 }
