@@ -8,6 +8,7 @@ import Heading from './Heading'
 import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
+import PropertyList from './PropertyList'
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <ShoppingList items={data}></ShoppingList>
       <hr />
 
+      <PropertyList propertyList={properties}></PropertyList>
 
      </div>
   )
