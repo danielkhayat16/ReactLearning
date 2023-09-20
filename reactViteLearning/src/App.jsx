@@ -9,7 +9,7 @@ function App() {
     
      <div>
       <Dog dogName="Rex" count="twice"></Dog>
-      <Die></Die>
+      <Die sides={20}></Die>
       <Die></Die>
      </div>
   )
