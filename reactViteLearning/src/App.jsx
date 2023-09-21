@@ -9,6 +9,7 @@ import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
+import Clicker from './Clicker'
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
 
       <PropertyList propertyList={properties}></PropertyList>
 
+      <Clicker></Clicker>
      </div>
   )
 }
