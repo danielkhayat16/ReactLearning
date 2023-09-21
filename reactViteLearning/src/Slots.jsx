@@ -1,38 +1,51 @@
-export default function Slots(){
-    function randomRoll ()  {return Math.floor(Math.random() * 3) ;}
-    const rolls = [];
-    function play () {
-    for (let i = 0; i<3;i++){
-        rolls[i] = randomRoll();
-        switch(rolls[i]){
-            case 0:
-                rolls[i] = "🍒";
-                break;
-            case 1:
-                rolls[i] = "🍌​";
-                break;
-            case 2:
-                rolls[i] = "🍇";
-            break;
+import { useEffect, useState } from "react";
 
+function randomRoll ()  {return Math.floor(Math.random() * 3) ;}
+    function rollAgain(rdm){
+        switch(rdm){
+            case 0:
+                return "🍒";
+            case 1:
+                return "🍌​";
+            case 2:
+                return "🍇";
         }
     }
+
+export default function Slots(){
+
+
+    
+    let [rdm1, setRdm1] = useState("🍒");
+    let [rdm2, setRdm2] = useState("🍌");
+    let [rdm3, setRdm3] = useState("🍇");
+    let isWin = (rdm1===(rdm2) && rdm2===(rdm3));
+    
+
+
+
+    
+    
+    function play () {
+  
+    
+    setRdm1(rollAgain(randomRoll()));
+    setRdm2(rollAgain(randomRoll()));
+    setRdm3(rollAgain(randomRoll()));
+    
     }
 
-    play();
-    const isWin = rolls[0] === rolls[1] && rolls[1] === rolls[2]
-    const c = isWin ? "green" : "red";
     return (
         <div>
-            <h1>{rolls}</h1>
+            <h1>{rdm1} {rdm2} {rdm3}</h1>
             {
             isWin ? 
                 <div>
-                <h2 style={{color:c}}>You win</h2> 
+                <h2 style={{color:"green"}}>You win</h2> 
                 <h3>Congrats</h3> 
                 </div> 
              : 
-                <h2 style={{color:c}}>You lose</h2>
+                <h2 style={{color:"red"}}>You lose</h2>
 
                 
             }
