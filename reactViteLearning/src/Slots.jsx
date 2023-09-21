@@ -33,7 +33,10 @@ export default function Slots(){
                 </div> 
              : 
                 <h2 style={{color:c}}>You lose</h2>
+
+                
             }
+            <button onClick={play}>Click</button>
         </div>
     )
 

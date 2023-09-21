@@ -1,11 +1,15 @@
-function handleClicker(){
-console.log("⭐​⭐​⭐​⭐​⭐​")}
 
-export default function Clicker(){
+export default function Clicker(props){
+
+    function handleClicker(){
+
+        alert(props.message)
+        }
+        
     return (
         <div>
-            <p>Click the Button</p>
-            <button onClick={handleClicker}>Click</button>
+            
+            <button onClick={handleClicker}>{props.buttonText}</button>
         </div>
     )
 }

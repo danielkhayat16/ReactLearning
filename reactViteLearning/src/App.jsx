@@ -10,6 +10,7 @@ import Slots from './Slots'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
+import Form from './Form'
 
 
 function App() {
@@ -52,7 +53,9 @@ function App() {
 
       <PropertyList propertyList={properties}></PropertyList>
 
-      <Clicker></Clicker>
+      <Clicker message="Hello" buttonText="Click"></Clicker>
+      <Form></Form>
+
      </div>
   )
 }
